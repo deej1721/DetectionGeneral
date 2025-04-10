@@ -1,0 +1,385 @@
+```ad-note
+title: reference below for tcode aggregator syntax
+
+```
+
+```
+```SPL
+`jarvis_index` mitre_technique_id IN (T1010,T1217,T1555,T1005,T1074,T1006,T1546,T1190,T1068,T1133,T1083,T1592,T1589,T1590,T1591,T1105,T1570,T1654,T1112,T1046,T1095,T1571,T1120,T1069,T1057,T1090,T1012,T1018,T1113,T1593,T1594,T1518,T1218,T1082,T1614,T1016,T1049,T1033,T1007,T1124,T1552,T1078,T1047) OR mitre_subtechnique_id IN (T1087.001,T1087.002,T1583.003,T1071.001,T1560.001,T1059.001,T1059.003,T1059.004,T1584.003,T1584.004,T1584.005,T1584.008,T1555.003,T1074.001,T1587.001,T1587.004,T1573.001,T1573.002,T1222.002,T1589.002,T1590.004,T1590.006,T1591.004,T1562.001,T1070.001,T1070.004,T1070.007,T1056.001,T1036.004,T1036.005,T1036.008,T1027.002,T1588.002,T1588.006,T1003.001,T1003.003,T1069.001,T1069.002,T1055.009,T1090.001,T1090.003,T1021.001,T1596.005,T1505.003,T1518.001,T1016.001,T1552.004,T1078.002,T1497.001)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+---
+
+```ad-danger
+title: China TCode Aggregations
+```
+
+[ALL Comment Panda TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1190, T1203, T1574, T1106, T1046, T1588, T1190, T1566, T1021, T1204)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Buckeye TCodes] - APT Tool
+```SPL
+`jarvis_index` mitre_technique_id IN (T1190, T1059, T1071, T1003, T1027, T1082, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL MUDDYWATER TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1059.001, T1027, T1071.001, T1041, T1082, T1547.001)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Numbered Panda TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1059.001, T1071.001, T1082, T1003, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL APT16 TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Deputy Dog TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Dynamite Panda TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1105
+)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Codoso Sunshop TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1068)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL APT30 TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1003, T1027)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL APT34 / OILRIG TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL APT41 / Wicked Panda TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Volt Typhoon TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Black Tech TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Mulberry Typhoon TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Stone Panda TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Aoqin Dragon TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Cinnamon Tempest TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+[ALL Confucius TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+[ALL Aquatic Panda TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Daggerfly TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+---
+
+```ad-danger
+title: Russia TCode Aggregations
+```
+
+[ALL APT28 TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL APT29 / Cozy Bear TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+---
+
+
+```ad-danger
+title: Iran TCode Aggregations
+```
+
+
+[ALL APT33 / Peach Sandstorm TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL APT39 / Remix Kitten TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Cleaver TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL CopyKittens TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Ajax Security Team TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1003)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL CURIUM TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN ()
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL CyberAv3ngers TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN ()
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+---
+
+
+```ad-danger
+title: North Korea TCode Aggregations
+```
+
+
+[ALL APT37 / Group123 TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+[ALL Andariel TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1566.001, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+
+---
+
+
+```ad-danger
+title: Non-State Actor TCode Aggregations
+```
+
+[ALL APT -C-23 TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN ()
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Carbanak TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1543, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Bouncing Golf TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1543, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL BITTER TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1543, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Blue Mockingbird TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN ()
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Akira TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN (T1543, T1190, T1059.001, T1071.001, T1082, T1027, T1055)
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL BackdoorDiplomacy TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN ()
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL BlackOasis TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN ()
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+[ALL Cobalt Group TCodes] - APT Tool
+
+```SPL
+`jarvis_index` mitre_technique_id IN ()
+| dedup _time
+| stats count as mitre_technique_id
+```
+
+
+---
+
+
+```ad-danger
+title: Other TCode Aggregations
+```
+
+
+---
