@@ -1,0 +1,3 @@
+`relevant index` mitre_technique_id IN (T1190, T1059.001, T1543.003, T1543.003, T1134, T1543.003, T1134, T1082, T1071.001)
+| dedup _time
+| stats count as mitre_technique_id
