@@ -1,0 +1,24 @@
+#search:
+index=zeek (id.orig_p IN (1216, 1227, 1234, 1111 , 2222, 3333, 4444, 5555, 6666, 7777, 8888, 9999, 31337) OR id.resp_p IN (1216, 1227, 1234, 1111 , 2222, 3333, 4444, 5555, 6666, 7777, 8888, 9999, 31337))
+#saved search w/ data enrichment
+
+index=zeek (id.orig_p IN (1216, 1227, 1234, 1111 , 2222, 3333, 4444, 5555, 6666, 7777, 8888, 9999, 31337) OR id.resp_p IN (1216, 1227, 1234, 1111 , 2222, 3333, 4444, 5555, 6666, 7777, 8888, 9999, 31337))
+| eval hash_sha256= lower(hash_sha256),
+hunting_trigger="",
+mitre_category=mvappend("Lateral_Movement","Execution"),
+mitre_technique="Connections from Uncommon Locations",
+mitre_technique_id="T0000",
+mitre_subtechnique="", 
+mitre_subtechnique_id="",
+apt="",
+mitre_link="https://attack.mitre.org/",
+creator="Cpl Taylor",
+upload_date="2025/04/14",
+last_modify_date="2025/04/14",
+mitre_version="v16",
+priority=""
+| `network_whitelist`
+| eval indextime = _indextime 
+| convert ctime(indextime) 
+| table _time indextime event_description host_fqdn user_name process_path process_id process_guid src_ip dst_ip dst_port src_host_name dst_host_name initiated transport mitre_category mitre_technique mitre_technique_id hunting_trigger mitre_subtechnique mitre_subtechnique_id apt mitre_link creator upload_date last_modify_date mitre_version priority
+| collect `jarvis_index`
